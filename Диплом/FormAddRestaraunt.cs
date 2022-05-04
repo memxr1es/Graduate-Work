@@ -95,34 +95,11 @@ namespace Диплом
             WindowState = FormWindowState.Minimized;
         }
 
-        private void checkForFillingTxb(Panel pnl)
-        {
-            foreach (var txb in pnl.Controls.OfType<TextBox>())
-            {
-                if (txb.Text == "")
-                {
-                    MessageBox.Show("Все поля обязательны к заполнению!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-            }
-        }
-
-        private void checkForFillingCmb(Panel pnl)
-        {
-            foreach (var cmb in pnl.Controls.OfType<ComboBox>())
-            {
-                if (cmb.Text == "")
-                {
-                    MessageBox.Show("Выберите элемент из списка!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-            }
-        }
 
         private void btnAddDish_Click(object sender, EventArgs e)
         {
-            checkForFillingCmb(pnlAddDish);
-            checkForFillingTxb(pnlAddDish);
+            Variables.checkForFillingCmb(pnlAddDish);
+            Variables.checkForFillingTxb(pnlAddDish);
 
             if (Variables.choiceAction == 1)
             {
@@ -142,8 +119,8 @@ namespace Диплом
 
         private void btnAddDeal_Click(object sender, EventArgs e)
         {
-            checkForFillingCmb(pnlAddDeals);
-            checkForFillingTxb(pnlAddDeals);
+            Variables.checkForFillingCmb(pnlAddDeals);
+            Variables.checkForFillingTxb(pnlAddDeals);
 
             if (Variables.choiceAction == 1)
             {

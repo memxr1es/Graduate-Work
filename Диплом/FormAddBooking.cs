@@ -35,6 +35,12 @@ namespace Диплом
 
         private void FormAddBooking_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "центрОРDataSet.Караоке". При необходимости она может быть перемещена или удалена.
+            this.караокеTableAdapter.Fill(this.центрОРDataSet.Караоке);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "центрОРDataSet.Боулинг". При необходимости она может быть перемещена или удалена.
+            this.боулингTableAdapter.Fill(this.центрОРDataSet.Боулинг);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "центрОРDataSet.Бильярд". При необходимости она может быть перемещена или удалена.
+            this.бильярдTableAdapter.Fill(this.центрОРDataSet.Бильярд);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "центрОРDataSet.БроньКараоке". При необходимости она может быть перемещена или удалена.
             this.броньКараокеTableAdapter.Fill(this.центрОРDataSet.БроньКараоке);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "центрОРDataSet.БроньБоулинг". При необходимости она может быть перемещена или удалена.
@@ -46,7 +52,7 @@ namespace Диплом
             {
                 case 1:
 
-                    this.Size = new Size(267, 375);
+                    this.Size = new Size(263, 332);
 
                     pnlBookingBilliards.Visible = true;
                     pnlBookingBilliards.Location = new Point(0, 0);
@@ -64,36 +70,36 @@ namespace Диплом
 
                 case 2:
 
-                    this.Size = new Size(286, 316);
+                    this.Size = new Size(264, 337);
 
-                    pnlAddDeals.Visible = true;
-                    pnlAddDeals.Location = new Point(0, 0);
+                    pnlBookingBowling.Visible = true;
+                    pnlBookingBowling.Location = new Point(0, 0);
 
                     if (Variables.choiceAction == 1)
                     {
-                        заказыВРесторанеBindingSource.AddNew();
+                        броньБоулингBindingSource.AddNew();
                     }
                     else if (Variables.choiceAction == 2)
                     {
-                        заказыВРесторанеBindingSource.Position = заказыВРесторанеBindingSource.Find("НомерСтола", Variables.codeOfTable);
+                        броньБоулингBindingSource.Position = броньБоулингBindingSource.Find("НомерДорожки", Variables.codeOfTable);
                     }
 
                     break;
 
                 case 3:
 
-                    this.Size = new Size(264, 243);
+                    this.Size = new Size(264, 339);
 
-                    pnlAddTable.Visible = true;
-                    pnlAddTable.Location = new Point(0, 0);
+                    pnlBookingKaraoke.Visible = true;
+                    pnlBookingKaraoke.Location = new Point(0, 0);
 
                     if (Variables.choiceAction == 1)
                     {
-                        залРесторанаBindingSource.AddNew();
+                        броньКараокеBindingSource.AddNew();
                     }
                     else if (Variables.choiceAction == 2)
                     {
-                        залРесторанаBindingSource.Position = залРесторанаBindingSource.Find("НомерСтола", Variables.codeOfTable);
+                        броньКараокеBindingSource.Position = броньКараокеBindingSource.Find("НомерСтола", Variables.codeOfTable);
                     }
 
                     break;
@@ -109,6 +115,58 @@ namespace Диплом
         private void btnMinimize_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnBilliards_Click(object sender, EventArgs e)
+        {
+            Variables.checkForFillingCmb(pnlBookingBilliards);
+            Variables.checkForFillingTxb(pnlBookingBilliards);
+
+            if (Variables.choiceAction == 1)
+            {
+                MessageBox.Show("Столик успешно забронирован.", "Оповещение", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if (Variables.choiceAction == 2)
+            {
+                MessageBox.Show("Информация о броне успешно изменена.", "Оповещение", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            this.Validate();
+            this.броньБильярдBindingSource.EndEdit();
+            this.броньБильярдTableAdapter.Update(this.центрОРDataSet.БроньБильярд);
+
+            this.Close();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            бильярдBindingSource.Position = бильярдBindingSource.Find("НомерСтолика", номерСтоликаComboBox.Text);
+
+            lblFinalSumBil.Text = (Convert.ToInt32(txbHourBilliard.Text) * Convert.ToInt32(бильярдDataGridView.CurrentRow.Cells[2].Value)).ToString();
+
+            var txb = (TextBox)sender;
+
+            if (txb.Text == "")
+            {
+                txb.Text = "0";
+            }
+        }
+
+        private void forAll_TextChanged(object sender, EventArgs e)
+        {
+            var txb = (TextBox)sender;
+
+            if (txb.Text == "")
+            {
+                txb.Text = "0";
+            }
+        }
+
+        private void txbDigit_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((char)e.KeyChar == (Char)Keys.Back) return;
+            if (char.IsDigit(e.KeyChar)) return;
+            e.Handled = true;
         }
     }
 }
