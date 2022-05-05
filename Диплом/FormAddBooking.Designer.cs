@@ -47,7 +47,8 @@ namespace Диплом
             this.броньБоулингBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.броньКараокеBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pnlBookingBilliards = new System.Windows.Forms.Panel();
-            this.датаБрониMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.lblFinalSumBil = new System.Windows.Forms.Label();
+            this.dateBookBil = new System.Windows.Forms.MaskedTextBox();
             this.btnBilliards = new System.Windows.Forms.Button();
             this.номерСтоликаComboBox = new System.Windows.Forms.ComboBox();
             this.бильярдBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -57,17 +58,19 @@ namespace Диплом
             this.броньБильярдTableAdapter = new Диплом.ЦентрОРDataSetTableAdapters.БроньБильярдTableAdapter();
             this.tableAdapterManager = new Диплом.ЦентрОРDataSetTableAdapters.TableAdapterManager();
             this.pnlBookingBowling = new System.Windows.Forms.Panel();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lblFinalSumBow = new System.Windows.Forms.Label();
+            this.dateBookBow = new System.Windows.Forms.MaskedTextBox();
+            this.numberOfRoad = new System.Windows.Forms.ComboBox();
             this.боулингBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txbHourBow = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.pnlBookingKaraoke = new System.Windows.Forms.Panel();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.lblFinalSumKar = new System.Windows.Forms.Label();
+            this.dateBookKar = new System.Windows.Forms.MaskedTextBox();
             this.btnKaraoke = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmbNumberOfTable = new System.Windows.Forms.ComboBox();
             this.караокеBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txbHourKar = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.броньБоулингTableAdapter = new Диплом.ЦентрОРDataSetTableAdapters.БроньБоулингTableAdapter();
             this.броньКараокеTableAdapter = new Диплом.ЦентрОРDataSetTableAdapters.БроньКараокеTableAdapter();
@@ -91,9 +94,23 @@ namespace Диплом
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewCheckBoxColumn3 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lblFinalSumBil = new System.Windows.Forms.Label();
-            this.lblFinalSumBow = new System.Windows.Forms.Label();
-            this.lblFinalSumKar = new System.Windows.Forms.Label();
+            this.броньБоулингDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.броньКараокеDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.броньНомераBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.броньНомераTableAdapter = new Диплом.ЦентрОРDataSetTableAdapters.БроньНомераTableAdapter();
+            this.броньБильярдDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             номерСтоликаLabel = new System.Windows.Forms.Label();
             label2 = new System.Windows.Forms.Label();
             label3 = new System.Windows.Forms.Label();
@@ -119,6 +136,10 @@ namespace Диплом
             ((System.ComponentModel.ISupportInitialize)(this.бильярдDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.боулингDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.караокеDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.броньБоулингDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.броньКараокеDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.броньНомераBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.броньБильярдDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // номерСтоликаLabel
@@ -154,16 +175,6 @@ namespace Диплом
             label3.TabIndex = 5;
             label3.Text = "К оплате :";
             // 
-            // броньБильярдBindingSource
-            // 
-            this.броньБильярдBindingSource.DataMember = "БроньБильярд";
-            this.броньБильярдBindingSource.DataSource = this.центрОРDataSet;
-            // 
-            // центрОРDataSet
-            // 
-            this.центрОРDataSet.DataSetName = "ЦентрОРDataSet";
-            this.центрОРDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // label5
             // 
             label5.AutoSize = true;
@@ -185,11 +196,6 @@ namespace Диплом
             label6.Size = new System.Drawing.Size(88, 18);
             label6.TabIndex = 9;
             label6.Text = "Дата брони :";
-            // 
-            // броньБоулингBindingSource
-            // 
-            this.броньБоулингBindingSource.DataMember = "БроньБоулинг";
-            this.броньБоулингBindingSource.DataSource = this.центрОРDataSet;
             // 
             // label8
             // 
@@ -235,11 +241,6 @@ namespace Диплом
             label12.TabIndex = 9;
             label12.Text = "Дата брони :";
             // 
-            // броньКараокеBindingSource
-            // 
-            this.броньКараокеBindingSource.DataMember = "БроньКараоке";
-            this.броньКараокеBindingSource.DataSource = this.центрОРDataSet;
-            // 
             // label14
             // 
             label14.AutoSize = true;
@@ -273,11 +274,31 @@ namespace Диплом
             label16.TabIndex = 1;
             label16.Text = "Номер cтола :";
             // 
+            // броньБильярдBindingSource
+            // 
+            this.броньБильярдBindingSource.DataMember = "БроньБильярд";
+            this.броньБильярдBindingSource.DataSource = this.центрОРDataSet;
+            // 
+            // центрОРDataSet
+            // 
+            this.центрОРDataSet.DataSetName = "ЦентрОРDataSet";
+            this.центрОРDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // броньБоулингBindingSource
+            // 
+            this.броньБоулингBindingSource.DataMember = "БроньБоулинг";
+            this.броньБоулингBindingSource.DataSource = this.центрОРDataSet;
+            // 
+            // броньКараокеBindingSource
+            // 
+            this.броньКараокеBindingSource.DataMember = "БроньКараоке";
+            this.броньКараокеBindingSource.DataSource = this.центрОРDataSet;
+            // 
             // pnlBookingBilliards
             // 
             this.pnlBookingBilliards.Controls.Add(this.lblFinalSumBil);
             this.pnlBookingBilliards.Controls.Add(label5);
-            this.pnlBookingBilliards.Controls.Add(this.датаБрониMaskedTextBox);
+            this.pnlBookingBilliards.Controls.Add(this.dateBookBil);
             this.pnlBookingBilliards.Controls.Add(this.btnBilliards);
             this.pnlBookingBilliards.Controls.Add(this.номерСтоликаComboBox);
             this.pnlBookingBilliards.Controls.Add(label3);
@@ -291,16 +312,29 @@ namespace Диплом
             this.pnlBookingBilliards.TabIndex = 0;
             this.pnlBookingBilliards.Visible = false;
             // 
-            // датаБрониMaskedTextBox
+            // lblFinalSumBil
             // 
-            this.датаБрониMaskedTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.броньБильярдBindingSource, "ДатаБрони", true));
-            this.датаБрониMaskedTextBox.Location = new System.Drawing.Point(144, 180);
-            this.датаБрониMaskedTextBox.Mask = "00/00/0000";
-            this.датаБрониMaskedTextBox.Name = "датаБрониMaskedTextBox";
-            this.датаБрониMaskedTextBox.Size = new System.Drawing.Size(100, 20);
-            this.датаБрониMaskedTextBox.TabIndex = 2;
-            this.датаБрониMaskedTextBox.ValidatingType = typeof(System.DateTime);
-            this.датаБрониMaskedTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbDigit_KeyPress);
+            this.lblFinalSumBil.AutoSize = true;
+            this.lblFinalSumBil.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.броньБильярдBindingSource, "КОплате", true));
+            this.lblFinalSumBil.Font = new System.Drawing.Font("Carlito", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblFinalSumBil.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblFinalSumBil.Location = new System.Drawing.Point(167, 226);
+            this.lblFinalSumBil.Name = "lblFinalSumBil";
+            this.lblFinalSumBil.Size = new System.Drawing.Size(16, 18);
+            this.lblFinalSumBil.TabIndex = 20;
+            this.lblFinalSumBil.Text = "0";
+            // 
+            // dateBookBil
+            // 
+            this.dateBookBil.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.броньБильярдBindingSource, "ДатаБрони", true));
+            this.dateBookBil.Location = new System.Drawing.Point(144, 180);
+            this.dateBookBil.Mask = "00/00/0000";
+            this.dateBookBil.Name = "dateBookBil";
+            this.dateBookBil.Size = new System.Drawing.Size(100, 20);
+            this.dateBookBil.TabIndex = 2;
+            this.dateBookBil.ValidatingType = typeof(System.DateTime);
+            this.dateBookBil.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbDigit_KeyPress);
+            this.dateBookBil.Leave += new System.EventHandler(this.датаБрониMaskedTextBox_Leave);
             // 
             // btnBilliards
             // 
@@ -327,6 +361,7 @@ namespace Диплом
             this.номерСтоликаComboBox.Name = "номерСтоликаComboBox";
             this.номерСтоликаComboBox.Size = new System.Drawing.Size(100, 21);
             this.номерСтоликаComboBox.TabIndex = 7;
+            this.номерСтоликаComboBox.Leave += new System.EventHandler(this.номерСтоликаComboBox_Leave);
             // 
             // бильярдBindingSource
             // 
@@ -367,6 +402,7 @@ namespace Диплом
             this.btnBowling.TabIndex = 8;
             this.btnBowling.Text = "Забронировать";
             this.btnBowling.UseVisualStyleBackColor = false;
+            this.btnBowling.Click += new System.EventHandler(this.btnBowling_Click);
             // 
             // броньБильярдTableAdapter
             // 
@@ -396,12 +432,12 @@ namespace Диплом
             // 
             this.pnlBookingBowling.Controls.Add(this.lblFinalSumBow);
             this.pnlBookingBowling.Controls.Add(label6);
-            this.pnlBookingBowling.Controls.Add(this.maskedTextBox1);
+            this.pnlBookingBowling.Controls.Add(this.dateBookBow);
             this.pnlBookingBowling.Controls.Add(this.btnBowling);
-            this.pnlBookingBowling.Controls.Add(this.comboBox1);
+            this.pnlBookingBowling.Controls.Add(this.numberOfRoad);
             this.pnlBookingBowling.Controls.Add(label8);
             this.pnlBookingBowling.Controls.Add(label9);
-            this.pnlBookingBowling.Controls.Add(this.textBox2);
+            this.pnlBookingBowling.Controls.Add(this.txbHourBow);
             this.pnlBookingBowling.Controls.Add(label10);
             this.pnlBookingBowling.Controls.Add(this.label11);
             this.pnlBookingBowling.Location = new System.Drawing.Point(309, 29);
@@ -410,42 +446,56 @@ namespace Диплом
             this.pnlBookingBowling.TabIndex = 10;
             this.pnlBookingBowling.Visible = false;
             // 
-            // maskedTextBox1
+            // lblFinalSumBow
             // 
-            this.maskedTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.броньБоулингBindingSource, "ДатаБрони", true));
-            this.maskedTextBox1.Location = new System.Drawing.Point(144, 180);
-            this.maskedTextBox1.Mask = "00/00/0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox1.TabIndex = 2;
-            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
-            this.maskedTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbDigit_KeyPress);
+            this.lblFinalSumBow.AutoSize = true;
+            this.lblFinalSumBow.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.броньБоулингBindingSource, "КОплате", true));
+            this.lblFinalSumBow.Font = new System.Drawing.Font("Carlito", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblFinalSumBow.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblFinalSumBow.Location = new System.Drawing.Point(186, 226);
+            this.lblFinalSumBow.Name = "lblFinalSumBow";
+            this.lblFinalSumBow.Size = new System.Drawing.Size(16, 18);
+            this.lblFinalSumBow.TabIndex = 21;
+            this.lblFinalSumBow.Text = "0";
             // 
-            // comboBox1
+            // dateBookBow
             // 
-            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.броньБоулингBindingSource, "НомерДорожки", true));
-            this.comboBox1.DataSource = this.боулингBindingSource;
-            this.comboBox1.DisplayMember = "НомерДорожки";
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(144, 89);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(100, 21);
-            this.comboBox1.TabIndex = 7;
+            this.dateBookBow.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.броньБоулингBindingSource, "ДатаБрони", true));
+            this.dateBookBow.Location = new System.Drawing.Point(144, 180);
+            this.dateBookBow.Mask = "00/00/0000";
+            this.dateBookBow.Name = "dateBookBow";
+            this.dateBookBow.Size = new System.Drawing.Size(100, 20);
+            this.dateBookBow.TabIndex = 2;
+            this.dateBookBow.ValidatingType = typeof(System.DateTime);
+            this.dateBookBow.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbDigit_KeyPress);
+            this.dateBookBow.Leave += new System.EventHandler(this.maskedTextBox1_Leave);
+            // 
+            // numberOfRoad
+            // 
+            this.numberOfRoad.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.броньБоулингBindingSource, "НомерДорожки", true));
+            this.numberOfRoad.DataSource = this.боулингBindingSource;
+            this.numberOfRoad.DisplayMember = "НомерДорожки";
+            this.numberOfRoad.FormattingEnabled = true;
+            this.numberOfRoad.Location = new System.Drawing.Point(144, 89);
+            this.numberOfRoad.Name = "numberOfRoad";
+            this.numberOfRoad.Size = new System.Drawing.Size(100, 21);
+            this.numberOfRoad.TabIndex = 7;
+            this.numberOfRoad.Leave += new System.EventHandler(this.numberOfRoad_Leave);
             // 
             // боулингBindingSource
             // 
             this.боулингBindingSource.DataMember = "Боулинг";
             this.боулингBindingSource.DataSource = this.центрОРDataSet;
             // 
-            // textBox2
+            // txbHourBow
             // 
-            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.броньБоулингBindingSource, "КоличествоЧасов", true));
-            this.textBox2.Location = new System.Drawing.Point(144, 134);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 4;
-            this.textBox2.TextChanged += new System.EventHandler(this.forAll_TextChanged);
-            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbDigit_KeyPress);
+            this.txbHourBow.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.броньБоулингBindingSource, "КоличествоЧасов", true));
+            this.txbHourBow.Location = new System.Drawing.Point(144, 134);
+            this.txbHourBow.Name = "txbHourBow";
+            this.txbHourBow.Size = new System.Drawing.Size(100, 20);
+            this.txbHourBow.TabIndex = 4;
+            this.txbHourBow.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txbHourBow.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbDigit_KeyPress);
             // 
             // label11
             // 
@@ -462,12 +512,12 @@ namespace Диплом
             // 
             this.pnlBookingKaraoke.Controls.Add(this.lblFinalSumKar);
             this.pnlBookingKaraoke.Controls.Add(label12);
-            this.pnlBookingKaraoke.Controls.Add(this.maskedTextBox2);
+            this.pnlBookingKaraoke.Controls.Add(this.dateBookKar);
             this.pnlBookingKaraoke.Controls.Add(this.btnKaraoke);
-            this.pnlBookingKaraoke.Controls.Add(this.comboBox2);
+            this.pnlBookingKaraoke.Controls.Add(this.cmbNumberOfTable);
             this.pnlBookingKaraoke.Controls.Add(label14);
             this.pnlBookingKaraoke.Controls.Add(label15);
-            this.pnlBookingKaraoke.Controls.Add(this.textBox3);
+            this.pnlBookingKaraoke.Controls.Add(this.txbHourKar);
             this.pnlBookingKaraoke.Controls.Add(label16);
             this.pnlBookingKaraoke.Controls.Add(this.label17);
             this.pnlBookingKaraoke.Location = new System.Drawing.Point(606, 29);
@@ -476,16 +526,29 @@ namespace Диплом
             this.pnlBookingKaraoke.TabIndex = 11;
             this.pnlBookingKaraoke.Visible = false;
             // 
-            // maskedTextBox2
+            // lblFinalSumKar
             // 
-            this.maskedTextBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.броньКараокеBindingSource, "ДатаБрони", true));
-            this.maskedTextBox2.Location = new System.Drawing.Point(144, 180);
-            this.maskedTextBox2.Mask = "00/00/0000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox2.TabIndex = 2;
-            this.maskedTextBox2.ValidatingType = typeof(System.DateTime);
-            this.maskedTextBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbDigit_KeyPress);
+            this.lblFinalSumKar.AutoSize = true;
+            this.lblFinalSumKar.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.броньКараокеBindingSource, "КОплате", true));
+            this.lblFinalSumKar.Font = new System.Drawing.Font("Carlito", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblFinalSumKar.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblFinalSumKar.Location = new System.Drawing.Point(183, 226);
+            this.lblFinalSumKar.Name = "lblFinalSumKar";
+            this.lblFinalSumKar.Size = new System.Drawing.Size(16, 18);
+            this.lblFinalSumKar.TabIndex = 22;
+            this.lblFinalSumKar.Text = "0";
+            // 
+            // dateBookKar
+            // 
+            this.dateBookKar.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.броньКараокеBindingSource, "ДатаБрони", true));
+            this.dateBookKar.Location = new System.Drawing.Point(144, 180);
+            this.dateBookKar.Mask = "00/00/0000";
+            this.dateBookKar.Name = "dateBookKar";
+            this.dateBookKar.Size = new System.Drawing.Size(100, 20);
+            this.dateBookKar.TabIndex = 2;
+            this.dateBookKar.ValidatingType = typeof(System.DateTime);
+            this.dateBookKar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbDigit_KeyPress);
+            this.dateBookKar.Leave += new System.EventHandler(this.maskedTextBox2_Leave);
             // 
             // btnKaraoke
             // 
@@ -500,32 +563,34 @@ namespace Диплом
             this.btnKaraoke.TabIndex = 8;
             this.btnKaraoke.Text = "Забронировать";
             this.btnKaraoke.UseVisualStyleBackColor = false;
+            this.btnKaraoke.Click += new System.EventHandler(this.btnKaraoke_Click);
             // 
-            // comboBox2
+            // cmbNumberOfTable
             // 
-            this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.броньКараокеBindingSource, "НомерСтола", true));
-            this.comboBox2.DataSource = this.караокеBindingSource;
-            this.comboBox2.DisplayMember = "НомерСтола";
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(144, 89);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(100, 21);
-            this.comboBox2.TabIndex = 7;
+            this.cmbNumberOfTable.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.броньКараокеBindingSource, "НомерСтола", true));
+            this.cmbNumberOfTable.DataSource = this.караокеBindingSource;
+            this.cmbNumberOfTable.DisplayMember = "НомерСтола";
+            this.cmbNumberOfTable.FormattingEnabled = true;
+            this.cmbNumberOfTable.Location = new System.Drawing.Point(144, 89);
+            this.cmbNumberOfTable.Name = "cmbNumberOfTable";
+            this.cmbNumberOfTable.Size = new System.Drawing.Size(100, 21);
+            this.cmbNumberOfTable.TabIndex = 7;
             // 
             // караокеBindingSource
             // 
             this.караокеBindingSource.DataMember = "Караоке";
             this.караокеBindingSource.DataSource = this.центрОРDataSet;
             // 
-            // textBox3
+            // txbHourKar
             // 
-            this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.броньКараокеBindingSource, "КоличествоЧасов", true));
-            this.textBox3.Location = new System.Drawing.Point(144, 134);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 4;
-            this.textBox3.TextChanged += new System.EventHandler(this.forAll_TextChanged);
-            this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbDigit_KeyPress);
+            this.txbHourKar.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.броньКараокеBindingSource, "КоличествоЧасов", true));
+            this.txbHourKar.Location = new System.Drawing.Point(144, 134);
+            this.txbHourKar.Name = "txbHourKar";
+            this.txbHourKar.Size = new System.Drawing.Size(100, 20);
+            this.txbHourKar.TabIndex = 4;
+            this.txbHourKar.TextChanged += new System.EventHandler(this.txbHourKar_TextChanged);
+            this.txbHourKar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbDigit_KeyPress);
+            this.txbHourKar.Leave += new System.EventHandler(this.txbHourKar_Leave);
             // 
             // label17
             // 
@@ -557,7 +622,7 @@ namespace Диплом
             this.btnMinimize.IconColor = System.Drawing.Color.Gainsboro;
             this.btnMinimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnMinimize.IconSize = 20;
-            this.btnMinimize.Location = new System.Drawing.Point(1255, -2);
+            this.btnMinimize.Location = new System.Drawing.Point(1339, -2);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(35, 23);
             this.btnMinimize.TabIndex = 19;
@@ -576,7 +641,7 @@ namespace Диплом
             this.btnExit.IconColor = System.Drawing.Color.Gainsboro;
             this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnExit.IconSize = 20;
-            this.btnExit.Location = new System.Drawing.Point(1288, 0);
+            this.btnExit.Location = new System.Drawing.Point(1372, 0);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(24, 20);
             this.btnExit.TabIndex = 18;
@@ -712,48 +777,141 @@ namespace Диплом
             this.dataGridViewTextBoxColumn9.HeaderText = "ЦенаЗаЧас";
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             // 
-            // lblFinalSumBil
+            // броньБоулингDataGridView
             // 
-            this.lblFinalSumBil.AutoSize = true;
-            this.lblFinalSumBil.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.броньБильярдBindingSource, "КОплате", true));
-            this.lblFinalSumBil.Font = new System.Drawing.Font("Carlito", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblFinalSumBil.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblFinalSumBil.Location = new System.Drawing.Point(167, 226);
-            this.lblFinalSumBil.Name = "lblFinalSumBil";
-            this.lblFinalSumBil.Size = new System.Drawing.Size(16, 18);
-            this.lblFinalSumBil.TabIndex = 20;
-            this.lblFinalSumBil.Text = "0";
+            this.броньБоулингDataGridView.AutoGenerateColumns = false;
+            this.броньБоулингDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.броньБоулингDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewTextBoxColumn13});
+            this.броньБоулингDataGridView.DataSource = this.броньБоулингBindingSource;
+            this.броньБоулингDataGridView.Location = new System.Drawing.Point(942, 298);
+            this.броньБоулингDataGridView.Name = "броньБоулингDataGridView";
+            this.броньБоулингDataGridView.Size = new System.Drawing.Size(10, 10);
+            this.броньБоулингDataGridView.TabIndex = 19;
             // 
-            // lblFinalSumBow
+            // dataGridViewTextBoxColumn10
             // 
-            this.lblFinalSumBow.AutoSize = true;
-            this.lblFinalSumBow.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.броньБоулингBindingSource, "КОплате", true));
-            this.lblFinalSumBow.Font = new System.Drawing.Font("Carlito", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblFinalSumBow.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblFinalSumBow.Location = new System.Drawing.Point(186, 226);
-            this.lblFinalSumBow.Name = "lblFinalSumBow";
-            this.lblFinalSumBow.Size = new System.Drawing.Size(16, 18);
-            this.lblFinalSumBow.TabIndex = 21;
-            this.lblFinalSumBow.Text = "0";
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "НомерДорожки";
+            this.dataGridViewTextBoxColumn10.HeaderText = "НомерДорожки";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
             // 
-            // lblFinalSumKar
+            // dataGridViewTextBoxColumn11
             // 
-            this.lblFinalSumKar.AutoSize = true;
-            this.lblFinalSumKar.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.броньКараокеBindingSource, "КОплате", true));
-            this.lblFinalSumKar.Font = new System.Drawing.Font("Carlito", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblFinalSumKar.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblFinalSumKar.Location = new System.Drawing.Point(183, 226);
-            this.lblFinalSumKar.Name = "lblFinalSumKar";
-            this.lblFinalSumKar.Size = new System.Drawing.Size(16, 18);
-            this.lblFinalSumKar.TabIndex = 22;
-            this.lblFinalSumKar.Text = "0";
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "КоличествоЧасов";
+            this.dataGridViewTextBoxColumn11.HeaderText = "КоличествоЧасов";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "КОплате";
+            this.dataGridViewTextBoxColumn12.HeaderText = "КОплате";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "ДатаБрони";
+            this.dataGridViewTextBoxColumn13.HeaderText = "ДатаБрони";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            // 
+            // броньКараокеDataGridView
+            // 
+            this.броньКараокеDataGridView.AutoGenerateColumns = false;
+            this.броньКараокеDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.броньКараокеDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn14,
+            this.dataGridViewTextBoxColumn15,
+            this.dataGridViewTextBoxColumn16,
+            this.dataGridViewTextBoxColumn17});
+            this.броньКараокеDataGridView.DataSource = this.броньКараокеBindingSource;
+            this.броньКараокеDataGridView.Location = new System.Drawing.Point(942, 314);
+            this.броньКараокеDataGridView.Name = "броньКараокеDataGridView";
+            this.броньКараокеDataGridView.Size = new System.Drawing.Size(10, 10);
+            this.броньКараокеDataGridView.TabIndex = 19;
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.DataPropertyName = "НомерСтола";
+            this.dataGridViewTextBoxColumn14.HeaderText = "НомерСтола";
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.DataPropertyName = "КоличествоЧасов";
+            this.dataGridViewTextBoxColumn15.HeaderText = "КоличествоЧасов";
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.DataPropertyName = "КОплате";
+            this.dataGridViewTextBoxColumn16.HeaderText = "КОплате";
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.DataPropertyName = "ДатаБрони";
+            this.dataGridViewTextBoxColumn17.HeaderText = "ДатаБрони";
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            // 
+            // броньНомераBindingSource
+            // 
+            this.броньНомераBindingSource.DataMember = "БроньНомера";
+            this.броньНомераBindingSource.DataSource = this.центрОРDataSet;
+            // 
+            // броньНомераTableAdapter
+            // 
+            this.броньНомераTableAdapter.ClearBeforeFill = true;
+            // 
+            // броньБильярдDataGridView
+            // 
+            this.броньБильярдDataGridView.AutoGenerateColumns = false;
+            this.броньБильярдDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.броньБильярдDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn18,
+            this.dataGridViewTextBoxColumn19,
+            this.dataGridViewTextBoxColumn20,
+            this.dataGridViewTextBoxColumn21});
+            this.броньБильярдDataGridView.DataSource = this.броньБильярдBindingSource;
+            this.броньБильярдDataGridView.Location = new System.Drawing.Point(942, 330);
+            this.броньБильярдDataGridView.Name = "броньБильярдDataGridView";
+            this.броньБильярдDataGridView.Size = new System.Drawing.Size(10, 10);
+            this.броньБильярдDataGridView.TabIndex = 19;
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.DataPropertyName = "НомерСтолика";
+            this.dataGridViewTextBoxColumn18.HeaderText = "НомерСтолика";
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            // 
+            // dataGridViewTextBoxColumn19
+            // 
+            this.dataGridViewTextBoxColumn19.DataPropertyName = "КоличествоЧасов";
+            this.dataGridViewTextBoxColumn19.HeaderText = "КоличествоЧасов";
+            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
+            // 
+            // dataGridViewTextBoxColumn20
+            // 
+            this.dataGridViewTextBoxColumn20.DataPropertyName = "КОплате";
+            this.dataGridViewTextBoxColumn20.HeaderText = "КОплате";
+            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
+            // 
+            // dataGridViewTextBoxColumn21
+            // 
+            this.dataGridViewTextBoxColumn21.DataPropertyName = "ДатаБрони";
+            this.dataGridViewTextBoxColumn21.HeaderText = "ДатаБрони";
+            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
             // 
             // FormAddBooking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(83)))));
-            this.ClientSize = new System.Drawing.Size(1311, 585);
+            this.ClientSize = new System.Drawing.Size(1395, 790);
+            this.Controls.Add(this.броньБильярдDataGridView);
+            this.Controls.Add(this.броньКараокеDataGridView);
+            this.Controls.Add(this.броньБоулингDataGridView);
             this.Controls.Add(this.караокеDataGridView);
             this.Controls.Add(this.боулингDataGridView);
             this.Controls.Add(this.бильярдDataGridView);
@@ -782,6 +940,10 @@ namespace Диплом
             ((System.ComponentModel.ISupportInitialize)(this.бильярдDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.боулингDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.караокеDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.броньБоулингDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.броньКараокеDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.броньНомераBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.броньБильярдDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -797,18 +959,18 @@ namespace Диплом
         private System.Windows.Forms.ComboBox номерСтоликаComboBox;
         private System.Windows.Forms.TextBox txbHourBilliard;
         private System.Windows.Forms.Button btnBowling;
-        private System.Windows.Forms.MaskedTextBox датаБрониMaskedTextBox;
+        private System.Windows.Forms.MaskedTextBox dateBookBil;
         private System.Windows.Forms.Button btnBilliards;
         private System.Windows.Forms.Panel pnlBookingBowling;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.MaskedTextBox dateBookBow;
+        private System.Windows.Forms.ComboBox numberOfRoad;
+        private System.Windows.Forms.TextBox txbHourBow;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel pnlBookingKaraoke;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.MaskedTextBox dateBookKar;
         private System.Windows.Forms.Button btnKaraoke;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.ComboBox cmbNumberOfTable;
+        private System.Windows.Forms.TextBox txbHourKar;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.BindingSource броньБоулингBindingSource;
         private ЦентрОРDataSetTableAdapters.БроньБоулингTableAdapter броньБоулингTableAdapter;
@@ -840,5 +1002,22 @@ namespace Диплом
         private System.Windows.Forms.Label lblFinalSumBil;
         private System.Windows.Forms.Label lblFinalSumBow;
         private System.Windows.Forms.Label lblFinalSumKar;
+        private System.Windows.Forms.DataGridView броньБоулингDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private System.Windows.Forms.DataGridView броньКараокеDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
+        private System.Windows.Forms.BindingSource броньНомераBindingSource;
+        private ЦентрОРDataSetTableAdapters.БроньНомераTableAdapter броньНомераTableAdapter;
+        private System.Windows.Forms.DataGridView броньБильярдDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn19;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
     }
 }

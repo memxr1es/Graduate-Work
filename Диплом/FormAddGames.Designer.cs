@@ -43,34 +43,34 @@ namespace Диплом
             System.Windows.Forms.Label label13;
             System.Windows.Forms.Label label14;
             this.pnlAddBilliards = new System.Windows.Forms.Panel();
+            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
+            this.бильярдBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.центрОРDataSet = new Диплом.ЦентрОРDataSet();
+            this.барCheckBox = new System.Windows.Forms.CheckBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.btnAddBilliards = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.центрОРDataSet = new Диплом.ЦентрОРDataSet();
-            this.бильярдBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.бильярдTableAdapter = new Диплом.ЦентрОРDataSetTableAdapters.БильярдTableAdapter();
             this.tableAdapterManager = new Диплом.ЦентрОРDataSetTableAdapters.TableAdapterManager();
-            this.барCheckBox = new System.Windows.Forms.CheckBox();
+            this.боулингTableAdapter = new Диплом.ЦентрОРDataSetTableAdapters.БоулингTableAdapter();
+            this.караокеTableAdapter = new Диплом.ЦентрОРDataSetTableAdapters.КараокеTableAdapter();
             this.pnlAddBowling = new System.Windows.Forms.Panel();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.боулингBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.счастливыеЧасыMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.btnAddBowling = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.боулингBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.боулингTableAdapter = new Диплом.ЦентрОРDataSetTableAdapters.БоулингTableAdapter();
-            this.счастливыеЧасыMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
             this.pnlAddKaraoke = new System.Windows.Forms.Panel();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.караокеBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.btnAddKaraoke = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
-            this.караокеBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.караокеTableAdapter = new Диплом.ЦентрОРDataSetTableAdapters.КараокеTableAdapter();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
             this.btnMinimize = new FontAwesome.Sharp.IconButton();
             this.btnExit = new FontAwesome.Sharp.IconButton();
             label5 = new System.Windows.Forms.Label();
@@ -86,29 +86,13 @@ namespace Диплом
             label13 = new System.Windows.Forms.Label();
             label14 = new System.Windows.Forms.Label();
             this.pnlAddBilliards.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.центрОРDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.бильярдBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.центрОРDataSet)).BeginInit();
             this.pnlAddBowling.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.боулингBindingSource)).BeginInit();
             this.pnlAddKaraoke.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.караокеBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pnlAddBilliards
-            // 
-            this.pnlAddBilliards.Controls.Add(this.maskedTextBox3);
-            this.pnlAddBilliards.Controls.Add(this.барCheckBox);
-            this.pnlAddBilliards.Controls.Add(this.textBox2);
-            this.pnlAddBilliards.Controls.Add(label5);
-            this.pnlAddBilliards.Controls.Add(this.btnAddBilliards);
-            this.pnlAddBilliards.Controls.Add(label2);
-            this.pnlAddBilliards.Controls.Add(номерСтоликаLabel);
-            this.pnlAddBilliards.Controls.Add(this.label1);
-            this.pnlAddBilliards.Location = new System.Drawing.Point(12, 31);
-            this.pnlAddBilliards.Name = "pnlAddBilliards";
-            this.pnlAddBilliards.Size = new System.Drawing.Size(264, 296);
-            this.pnlAddBilliards.TabIndex = 1;
-            this.pnlAddBilliards.Visible = false;
             // 
             // label5
             // 
@@ -120,20 +104,6 @@ namespace Диплом
             label5.Size = new System.Drawing.Size(86, 18);
             label5.TabIndex = 9;
             label5.Text = "Цена за час :";
-            // 
-            // btnAddBilliards
-            // 
-            this.btnAddBilliards.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(120)))));
-            this.btnAddBilliards.FlatAppearance.BorderSize = 0;
-            this.btnAddBilliards.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddBilliards.Font = new System.Drawing.Font("Carlito", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnAddBilliards.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnAddBilliards.Location = new System.Drawing.Point(51, 228);
-            this.btnAddBilliards.Name = "btnAddBilliards";
-            this.btnAddBilliards.Size = new System.Drawing.Size(156, 38);
-            this.btnAddBilliards.TabIndex = 8;
-            this.btnAddBilliards.Text = "Сохранить";
-            this.btnAddBilliards.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
@@ -157,6 +127,171 @@ namespace Диплом
             номерСтоликаLabel.TabIndex = 1;
             номерСтоликаLabel.Text = "Номер cтолика :";
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new System.Drawing.Font("Carlito", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            label3.ForeColor = System.Drawing.SystemColors.Control;
+            label3.Location = new System.Drawing.Point(12, 215);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(86, 18);
+            label3.TabIndex = 9;
+            label3.Text = "Цена за час :";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new System.Drawing.Font("Carlito", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            label4.ForeColor = System.Drawing.SystemColors.Control;
+            label4.Location = new System.Drawing.Point(12, 174);
+            label4.Name = "label4";
+            label4.Size = new System.Drawing.Size(38, 18);
+            label4.TabIndex = 3;
+            label4.Text = "Бар :";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new System.Drawing.Font("Carlito", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            label6.ForeColor = System.Drawing.SystemColors.Control;
+            label6.Location = new System.Drawing.Point(12, 89);
+            label6.Name = "label6";
+            label6.Size = new System.Drawing.Size(117, 18);
+            label6.TabIndex = 1;
+            label6.Text = "Номер дорожки :";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new System.Drawing.Font("Carlito", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            label8.ForeColor = System.Drawing.SystemColors.Control;
+            label8.Location = new System.Drawing.Point(12, 134);
+            label8.Name = "label8";
+            label8.Size = new System.Drawing.Size(133, 18);
+            label8.TabIndex = 12;
+            label8.Text = "Количество людей :";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new System.Drawing.Font("Carlito", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            label9.ForeColor = System.Drawing.SystemColors.Control;
+            label9.Location = new System.Drawing.Point(12, 261);
+            label9.Name = "label9";
+            label9.Size = new System.Drawing.Size(121, 18);
+            label9.TabIndex = 14;
+            label9.Text = "Счастливые часы :";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new System.Drawing.Font("Carlito", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            label11.ForeColor = System.Drawing.SystemColors.Control;
+            label11.Location = new System.Drawing.Point(12, 134);
+            label11.Name = "label11";
+            label11.Size = new System.Drawing.Size(122, 18);
+            label11.TabIndex = 12;
+            label11.Text = "Максимум песен :";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new System.Drawing.Font("Carlito", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            label12.ForeColor = System.Drawing.SystemColors.Control;
+            label12.Location = new System.Drawing.Point(12, 215);
+            label12.Name = "label12";
+            label12.Size = new System.Drawing.Size(86, 18);
+            label12.TabIndex = 9;
+            label12.Text = "Цена за час :";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Font = new System.Drawing.Font("Carlito", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            label13.ForeColor = System.Drawing.SystemColors.Control;
+            label13.Location = new System.Drawing.Point(12, 174);
+            label13.Name = "label13";
+            label13.Size = new System.Drawing.Size(38, 18);
+            label13.TabIndex = 3;
+            label13.Text = "Бар :";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Font = new System.Drawing.Font("Carlito", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            label14.ForeColor = System.Drawing.SystemColors.Control;
+            label14.Location = new System.Drawing.Point(12, 89);
+            label14.Name = "label14";
+            label14.Size = new System.Drawing.Size(95, 18);
+            label14.TabIndex = 1;
+            label14.Text = "Номер стола :";
+            // 
+            // pnlAddBilliards
+            // 
+            this.pnlAddBilliards.Controls.Add(this.maskedTextBox3);
+            this.pnlAddBilliards.Controls.Add(this.барCheckBox);
+            this.pnlAddBilliards.Controls.Add(this.textBox2);
+            this.pnlAddBilliards.Controls.Add(label5);
+            this.pnlAddBilliards.Controls.Add(this.btnAddBilliards);
+            this.pnlAddBilliards.Controls.Add(label2);
+            this.pnlAddBilliards.Controls.Add(номерСтоликаLabel);
+            this.pnlAddBilliards.Controls.Add(this.label1);
+            this.pnlAddBilliards.Location = new System.Drawing.Point(12, 31);
+            this.pnlAddBilliards.Name = "pnlAddBilliards";
+            this.pnlAddBilliards.Size = new System.Drawing.Size(264, 296);
+            this.pnlAddBilliards.TabIndex = 1;
+            this.pnlAddBilliards.Visible = false;
+            // 
+            // maskedTextBox3
+            // 
+            this.maskedTextBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.бильярдBindingSource, "ЦенаЗаЧас", true));
+            this.maskedTextBox3.Location = new System.Drawing.Point(144, 178);
+            this.maskedTextBox3.Name = "maskedTextBox3";
+            this.maskedTextBox3.Size = new System.Drawing.Size(100, 20);
+            this.maskedTextBox3.TabIndex = 16;
+            // 
+            // бильярдBindingSource
+            // 
+            this.бильярдBindingSource.DataMember = "Бильярд";
+            this.бильярдBindingSource.DataSource = this.центрОРDataSet;
+            // 
+            // центрОРDataSet
+            // 
+            this.центрОРDataSet.DataSetName = "ЦентрОРDataSet";
+            this.центрОРDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // барCheckBox
+            // 
+            this.барCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.бильярдBindingSource, "Бар", true));
+            this.барCheckBox.Location = new System.Drawing.Point(184, 134);
+            this.барCheckBox.Name = "барCheckBox";
+            this.барCheckBox.Size = new System.Drawing.Size(14, 24);
+            this.барCheckBox.TabIndex = 2;
+            this.барCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.бильярдBindingSource, "НомерСтолика", true));
+            this.textBox2.Location = new System.Drawing.Point(144, 89);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 10;
+            // 
+            // btnAddBilliards
+            // 
+            this.btnAddBilliards.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(120)))));
+            this.btnAddBilliards.FlatAppearance.BorderSize = 0;
+            this.btnAddBilliards.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddBilliards.Font = new System.Drawing.Font("Carlito", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnAddBilliards.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnAddBilliards.Location = new System.Drawing.Point(51, 228);
+            this.btnAddBilliards.Name = "btnAddBilliards";
+            this.btnAddBilliards.Size = new System.Drawing.Size(156, 38);
+            this.btnAddBilliards.TabIndex = 8;
+            this.btnAddBilliards.Text = "Сохранить";
+            this.btnAddBilliards.UseVisualStyleBackColor = false;
+            this.btnAddBilliards.Click += new System.EventHandler(this.btnAddBilliards_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -167,24 +302,6 @@ namespace Диплом
             this.label1.Size = new System.Drawing.Size(180, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Добавление столика";
-            // 
-            // textBox2
-            // 
-            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.бильярдBindingSource, "НомерСтолика", true));
-            this.textBox2.Location = new System.Drawing.Point(144, 89);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 10;
-            // 
-            // центрОРDataSet
-            // 
-            this.центрОРDataSet.DataSetName = "ЦентрОРDataSet";
-            this.центрОРDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // бильярдBindingSource
-            // 
-            this.бильярдBindingSource.DataMember = "Бильярд";
-            this.бильярдBindingSource.DataSource = this.центрОРDataSet;
             // 
             // бильярдTableAdapter
             // 
@@ -210,14 +327,13 @@ namespace Диплом
             this.tableAdapterManager.СотрудникиTableAdapter = null;
             this.tableAdapterManager.СпаСалонTableAdapter = null;
             // 
-            // барCheckBox
+            // боулингTableAdapter
             // 
-            this.барCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.бильярдBindingSource, "Бар", true));
-            this.барCheckBox.Location = new System.Drawing.Point(184, 134);
-            this.барCheckBox.Name = "барCheckBox";
-            this.барCheckBox.Size = new System.Drawing.Size(14, 24);
-            this.барCheckBox.TabIndex = 2;
-            this.барCheckBox.UseVisualStyleBackColor = true;
+            this.боулингTableAdapter.ClearBeforeFill = true;
+            // 
+            // караокеTableAdapter
+            // 
+            this.караокеTableAdapter.ClearBeforeFill = true;
             // 
             // pnlAddBowling
             // 
@@ -239,6 +355,36 @@ namespace Диплом
             this.pnlAddBowling.TabIndex = 12;
             this.pnlAddBowling.Visible = false;
             // 
+            // maskedTextBox2
+            // 
+            this.maskedTextBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.боулингBindingSource, "ЦенаЗаЧас", true));
+            this.maskedTextBox2.Location = new System.Drawing.Point(151, 213);
+            this.maskedTextBox2.Name = "maskedTextBox2";
+            this.maskedTextBox2.Size = new System.Drawing.Size(100, 20);
+            this.maskedTextBox2.TabIndex = 16;
+            // 
+            // боулингBindingSource
+            // 
+            this.боулингBindingSource.DataMember = "Боулинг";
+            this.боулингBindingSource.DataSource = this.центрОРDataSet;
+            // 
+            // счастливыеЧасыMaskedTextBox
+            // 
+            this.счастливыеЧасыMaskedTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.боулингBindingSource, "СчастливыеЧасы", true));
+            this.счастливыеЧасыMaskedTextBox.Location = new System.Drawing.Point(151, 259);
+            this.счастливыеЧасыMaskedTextBox.Mask = "с 00:00 до 00:00";
+            this.счастливыеЧасыMaskedTextBox.Name = "счастливыеЧасыMaskedTextBox";
+            this.счастливыеЧасыMaskedTextBox.Size = new System.Drawing.Size(100, 20);
+            this.счастливыеЧасыMaskedTextBox.TabIndex = 13;
+            // 
+            // textBox5
+            // 
+            this.textBox5.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.боулингBindingSource, "КоличествоЛюдей", true));
+            this.textBox5.Location = new System.Drawing.Point(151, 134);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.TabIndex = 13;
+            // 
             // checkBox1
             // 
             this.checkBox1.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.боулингBindingSource, "Бар", true));
@@ -256,17 +402,6 @@ namespace Диплом
             this.textBox4.Size = new System.Drawing.Size(100, 20);
             this.textBox4.TabIndex = 10;
             // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new System.Drawing.Font("Carlito", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            label3.ForeColor = System.Drawing.SystemColors.Control;
-            label3.Location = new System.Drawing.Point(12, 215);
-            label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(86, 18);
-            label3.TabIndex = 9;
-            label3.Text = "Цена за час :";
-            // 
             // btnAddBowling
             // 
             this.btnAddBowling.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(120)))));
@@ -280,28 +415,7 @@ namespace Диплом
             this.btnAddBowling.TabIndex = 8;
             this.btnAddBowling.Text = "Сохранить";
             this.btnAddBowling.UseVisualStyleBackColor = false;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new System.Drawing.Font("Carlito", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            label4.ForeColor = System.Drawing.SystemColors.Control;
-            label4.Location = new System.Drawing.Point(12, 174);
-            label4.Name = "label4";
-            label4.Size = new System.Drawing.Size(38, 18);
-            label4.TabIndex = 3;
-            label4.Text = "Бар :";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new System.Drawing.Font("Carlito", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            label6.ForeColor = System.Drawing.SystemColors.Control;
-            label6.Location = new System.Drawing.Point(12, 89);
-            label6.Name = "label6";
-            label6.Size = new System.Drawing.Size(117, 18);
-            label6.TabIndex = 1;
-            label6.Text = "Номер дорожки :";
+            this.btnAddBowling.Click += new System.EventHandler(this.btnAddBowling_Click);
             // 
             // label7
             // 
@@ -313,54 +427,6 @@ namespace Диплом
             this.label7.Size = new System.Drawing.Size(191, 23);
             this.label7.TabIndex = 0;
             this.label7.Text = "Добавление дорожки";
-            // 
-            // textBox5
-            // 
-            this.textBox5.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.боулингBindingSource, "КоличествоЛюдей", true));
-            this.textBox5.Location = new System.Drawing.Point(151, 134);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 13;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new System.Drawing.Font("Carlito", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            label8.ForeColor = System.Drawing.SystemColors.Control;
-            label8.Location = new System.Drawing.Point(12, 134);
-            label8.Name = "label8";
-            label8.Size = new System.Drawing.Size(133, 18);
-            label8.TabIndex = 12;
-            label8.Text = "Количество людей :";
-            // 
-            // боулингBindingSource
-            // 
-            this.боулингBindingSource.DataMember = "Боулинг";
-            this.боулингBindingSource.DataSource = this.центрОРDataSet;
-            // 
-            // боулингTableAdapter
-            // 
-            this.боулингTableAdapter.ClearBeforeFill = true;
-            // 
-            // счастливыеЧасыMaskedTextBox
-            // 
-            this.счастливыеЧасыMaskedTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.боулингBindingSource, "СчастливыеЧасы", true));
-            this.счастливыеЧасыMaskedTextBox.Location = new System.Drawing.Point(151, 259);
-            this.счастливыеЧасыMaskedTextBox.Mask = "с 00:00 до 00:00";
-            this.счастливыеЧасыMaskedTextBox.Name = "счастливыеЧасыMaskedTextBox";
-            this.счастливыеЧасыMaskedTextBox.Size = new System.Drawing.Size(100, 20);
-            this.счастливыеЧасыMaskedTextBox.TabIndex = 13;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Font = new System.Drawing.Font("Carlito", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            label9.ForeColor = System.Drawing.SystemColors.Control;
-            label9.Location = new System.Drawing.Point(12, 261);
-            label9.Name = "label9";
-            label9.Size = new System.Drawing.Size(121, 18);
-            label9.TabIndex = 14;
-            label9.Text = "Счастливые часы :";
             // 
             // pnlAddKaraoke
             // 
@@ -380,6 +446,19 @@ namespace Диплом
             this.pnlAddKaraoke.TabIndex = 15;
             this.pnlAddKaraoke.Visible = false;
             // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.караокеBindingSource, "ЦенаЗаЧас", true));
+            this.maskedTextBox1.Location = new System.Drawing.Point(151, 213);
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
+            this.maskedTextBox1.TabIndex = 15;
+            // 
+            // караокеBindingSource
+            // 
+            this.караокеBindingSource.DataMember = "Караоке";
+            this.караокеBindingSource.DataSource = this.центрОРDataSet;
+            // 
             // textBox6
             // 
             this.textBox6.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.караокеBindingSource, "МаксимумПесен", true));
@@ -387,17 +466,6 @@ namespace Диплом
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(100, 20);
             this.textBox6.TabIndex = 13;
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new System.Drawing.Font("Carlito", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            label11.ForeColor = System.Drawing.SystemColors.Control;
-            label11.Location = new System.Drawing.Point(12, 134);
-            label11.Name = "label11";
-            label11.Size = new System.Drawing.Size(122, 18);
-            label11.TabIndex = 12;
-            label11.Text = "Максимум песен :";
             // 
             // checkBox2
             // 
@@ -417,17 +485,6 @@ namespace Диплом
             this.textBox8.Size = new System.Drawing.Size(100, 20);
             this.textBox8.TabIndex = 10;
             // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Font = new System.Drawing.Font("Carlito", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            label12.ForeColor = System.Drawing.SystemColors.Control;
-            label12.Location = new System.Drawing.Point(12, 215);
-            label12.Name = "label12";
-            label12.Size = new System.Drawing.Size(86, 18);
-            label12.TabIndex = 9;
-            label12.Text = "Цена за час :";
-            // 
             // btnAddKaraoke
             // 
             this.btnAddKaraoke.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(120)))));
@@ -441,28 +498,7 @@ namespace Диплом
             this.btnAddKaraoke.TabIndex = 8;
             this.btnAddKaraoke.Text = "Сохранить";
             this.btnAddKaraoke.UseVisualStyleBackColor = false;
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Font = new System.Drawing.Font("Carlito", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            label13.ForeColor = System.Drawing.SystemColors.Control;
-            label13.Location = new System.Drawing.Point(12, 174);
-            label13.Name = "label13";
-            label13.Size = new System.Drawing.Size(38, 18);
-            label13.TabIndex = 3;
-            label13.Text = "Бар :";
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Font = new System.Drawing.Font("Carlito", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            label14.ForeColor = System.Drawing.SystemColors.Control;
-            label14.Location = new System.Drawing.Point(12, 89);
-            label14.Name = "label14";
-            label14.Size = new System.Drawing.Size(95, 18);
-            label14.TabIndex = 1;
-            label14.Text = "Номер стола :";
+            this.btnAddKaraoke.Click += new System.EventHandler(this.btnAddKaraoke_Click);
             // 
             // label15
             // 
@@ -474,42 +510,6 @@ namespace Диплом
             this.label15.Size = new System.Drawing.Size(160, 23);
             this.label15.TabIndex = 0;
             this.label15.Text = "Добавление стола";
-            // 
-            // караокеBindingSource
-            // 
-            this.караокеBindingSource.DataMember = "Караоке";
-            this.караокеBindingSource.DataSource = this.центрОРDataSet;
-            // 
-            // караокеTableAdapter
-            // 
-            this.караокеTableAdapter.ClearBeforeFill = true;
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.караокеBindingSource, "ЦенаЗаЧас", true));
-            this.maskedTextBox1.Location = new System.Drawing.Point(151, 213);
-            this.maskedTextBox1.Mask = "00000 руб";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox1.TabIndex = 15;
-            // 
-            // maskedTextBox2
-            // 
-            this.maskedTextBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.боулингBindingSource, "ЦенаЗаЧас", true));
-            this.maskedTextBox2.Location = new System.Drawing.Point(151, 213);
-            this.maskedTextBox2.Mask = "00000 руб";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox2.TabIndex = 16;
-            // 
-            // maskedTextBox3
-            // 
-            this.maskedTextBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.бильярдBindingSource, "ЦенаЗаЧас", true));
-            this.maskedTextBox3.Location = new System.Drawing.Point(144, 178);
-            this.maskedTextBox3.Mask = "00000 руб";
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox3.TabIndex = 16;
             // 
             // btnMinimize
             // 
@@ -565,8 +565,8 @@ namespace Диплом
             this.Load += new System.EventHandler(this.FormAddGames_Load);
             this.pnlAddBilliards.ResumeLayout(false);
             this.pnlAddBilliards.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.центрОРDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.бильярдBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.центрОРDataSet)).EndInit();
             this.pnlAddBowling.ResumeLayout(false);
             this.pnlAddBowling.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.боулингBindingSource)).EndInit();

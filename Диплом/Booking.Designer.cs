@@ -30,59 +30,59 @@ namespace Диплом
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlBookingBilliard = new System.Windows.Forms.Panel();
             this.iBtnDel = new FontAwesome.Sharp.IconButton();
             this.iBtnChange = new FontAwesome.Sharp.IconButton();
             this.iBtnAdd = new FontAwesome.Sharp.IconButton();
             this.billiardsDataGridView = new System.Windows.Forms.DataGridView();
+            this.номерСтоликаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.количествоЧасовDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.датаБрониDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.кОплатеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.броньБильярдBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.центрОРDataSet = new Диплом.ЦентрОРDataSet();
             this.pnlBookingBowling = new System.Windows.Forms.Panel();
             this.iBtnDelBookBow = new FontAwesome.Sharp.IconButton();
             this.iBtnChangeBookBow = new FontAwesome.Sharp.IconButton();
             this.iBtnAddBookBow = new FontAwesome.Sharp.IconButton();
             this.bowlingDataGridView = new System.Windows.Forms.DataGridView();
+            this.номерДорожкиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.количествоЧасовDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.датаБрониDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.кОплатеDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.броньБоулингBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pnlBookingKaraoke = new System.Windows.Forms.Panel();
             this.iBtnDelBookKar = new FontAwesome.Sharp.IconButton();
             this.iBtnChangeBookKar = new FontAwesome.Sharp.IconButton();
             this.iBtnAddBookKar = new FontAwesome.Sharp.IconButton();
             this.karaokeDataGridView = new System.Windows.Forms.DataGridView();
-            this.iBtnBackB = new FontAwesome.Sharp.IconButton();
-            this.центрОРDataSet = new Диплом.ЦентрОРDataSet();
-            this.броньБильярдBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.броньБильярдTableAdapter = new Диплом.ЦентрОРDataSetTableAdapters.БроньБильярдTableAdapter();
-            this.броньБоулингBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.броньБоулингTableAdapter = new Диплом.ЦентрОРDataSetTableAdapters.БроньБоулингTableAdapter();
-            this.броньКараокеBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.броньКараокеTableAdapter = new Диплом.ЦентрОРDataSetTableAdapters.БроньКараокеTableAdapter();
-            this.номерСтоликаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.количествоЧасовDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.датаБрониDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.кОплатеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.номерДорожкиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.количествоЧасовDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.датаБрониDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.кОплатеDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.номерСтолаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.количествоЧасовDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.датаБрониDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.кОплатеDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.броньКараокеBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.iBtnBackB = new FontAwesome.Sharp.IconButton();
+            this.броньБильярдTableAdapter = new Диплом.ЦентрОРDataSetTableAdapters.БроньБильярдTableAdapter();
+            this.броньБоулингTableAdapter = new Диплом.ЦентрОРDataSetTableAdapters.БроньБоулингTableAdapter();
+            this.броньКараокеTableAdapter = new Диплом.ЦентрОРDataSetTableAdapters.БроньКараокеTableAdapter();
             this.pnlBookingBilliard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.billiardsDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.броньБильярдBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.центрОРDataSet)).BeginInit();
             this.pnlBookingBowling.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bowlingDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.броньБоулингBindingSource)).BeginInit();
             this.pnlBookingKaraoke.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.karaokeDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.центрОРDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.броньБильярдBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.броньБоулингBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.броньКараокеBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -141,6 +141,7 @@ namespace Диплом
             this.iBtnChange.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iBtnChange.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iBtnChange.UseVisualStyleBackColor = false;
+            this.iBtnChange.Click += new System.EventHandler(this.iBtnChange_Click);
             // 
             // iBtnAdd
             // 
@@ -163,27 +164,28 @@ namespace Диплом
             this.iBtnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iBtnAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iBtnAdd.UseVisualStyleBackColor = false;
+            this.iBtnAdd.Click += new System.EventHandler(this.iBtnAdd_Click);
             // 
             // billiardsDataGridView
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(90)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Carlito", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(120)))));
-            this.billiardsDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle46.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(90)))));
+            dataGridViewCellStyle46.Font = new System.Drawing.Font("Carlito", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle46.ForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle46.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(120)))));
+            this.billiardsDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle46;
             this.billiardsDataGridView.AutoGenerateColumns = false;
             this.billiardsDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.billiardsDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(83)))));
             this.billiardsDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.billiardsDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(90)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Carlito", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(120)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.billiardsDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(90)))));
+            dataGridViewCellStyle47.Font = new System.Drawing.Font("Carlito", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle47.ForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle47.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(120)))));
+            dataGridViewCellStyle47.SelectionForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.billiardsDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle47;
             this.billiardsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.billiardsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.номерСтоликаDataGridViewTextBoxColumn,
@@ -191,20 +193,54 @@ namespace Диплом
             this.датаБрониDataGridViewTextBoxColumn,
             this.кОплатеDataGridViewTextBoxColumn});
             this.billiardsDataGridView.DataSource = this.броньБильярдBindingSource;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(90)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Carlito", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(120)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.billiardsDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle48.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(90)))));
+            dataGridViewCellStyle48.Font = new System.Drawing.Font("Carlito", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle48.ForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle48.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(120)))));
+            dataGridViewCellStyle48.SelectionForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle48.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.billiardsDataGridView.DefaultCellStyle = dataGridViewCellStyle48;
             this.billiardsDataGridView.GridColor = System.Drawing.SystemColors.Control;
             this.billiardsDataGridView.Location = new System.Drawing.Point(25, 19);
             this.billiardsDataGridView.Name = "billiardsDataGridView";
             this.billiardsDataGridView.RowHeadersVisible = false;
             this.billiardsDataGridView.Size = new System.Drawing.Size(758, 263);
             this.billiardsDataGridView.TabIndex = 4;
+            // 
+            // номерСтоликаDataGridViewTextBoxColumn
+            // 
+            this.номерСтоликаDataGridViewTextBoxColumn.DataPropertyName = "НомерСтолика";
+            this.номерСтоликаDataGridViewTextBoxColumn.HeaderText = "Номер столика";
+            this.номерСтоликаDataGridViewTextBoxColumn.Name = "номерСтоликаDataGridViewTextBoxColumn";
+            // 
+            // количествоЧасовDataGridViewTextBoxColumn
+            // 
+            this.количествоЧасовDataGridViewTextBoxColumn.DataPropertyName = "КоличествоЧасов";
+            this.количествоЧасовDataGridViewTextBoxColumn.HeaderText = "Количество часов";
+            this.количествоЧасовDataGridViewTextBoxColumn.Name = "количествоЧасовDataGridViewTextBoxColumn";
+            // 
+            // датаБрониDataGridViewTextBoxColumn
+            // 
+            this.датаБрониDataGridViewTextBoxColumn.DataPropertyName = "ДатаБрони";
+            this.датаБрониDataGridViewTextBoxColumn.HeaderText = "Дата брони";
+            this.датаБрониDataGridViewTextBoxColumn.Name = "датаБрониDataGridViewTextBoxColumn";
+            // 
+            // кОплатеDataGridViewTextBoxColumn
+            // 
+            this.кОплатеDataGridViewTextBoxColumn.DataPropertyName = "КОплате";
+            this.кОплатеDataGridViewTextBoxColumn.HeaderText = "К оплате";
+            this.кОплатеDataGridViewTextBoxColumn.Name = "кОплатеDataGridViewTextBoxColumn";
+            // 
+            // броньБильярдBindingSource
+            // 
+            this.броньБильярдBindingSource.DataMember = "БроньБильярд";
+            this.броньБильярдBindingSource.DataSource = this.центрОРDataSet;
+            // 
+            // центрОРDataSet
+            // 
+            this.центрОРDataSet.DataSetName = "ЦентрОРDataSet";
+            this.центрОРDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // pnlBookingBowling
             // 
@@ -261,6 +297,7 @@ namespace Диплом
             this.iBtnChangeBookBow.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iBtnChangeBookBow.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iBtnChangeBookBow.UseVisualStyleBackColor = false;
+            this.iBtnChangeBookBow.Click += new System.EventHandler(this.iBtnChangeBookBow_Click);
             // 
             // iBtnAddBookBow
             // 
@@ -283,27 +320,28 @@ namespace Диплом
             this.iBtnAddBookBow.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iBtnAddBookBow.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iBtnAddBookBow.UseVisualStyleBackColor = false;
+            this.iBtnAddBookBow.Click += new System.EventHandler(this.iBtnAddBookBow_Click);
             // 
             // bowlingDataGridView
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(90)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Carlito", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(120)))));
-            this.bowlingDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle49.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(90)))));
+            dataGridViewCellStyle49.Font = new System.Drawing.Font("Carlito", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle49.ForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle49.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(120)))));
+            this.bowlingDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle49;
             this.bowlingDataGridView.AutoGenerateColumns = false;
             this.bowlingDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.bowlingDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(83)))));
             this.bowlingDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bowlingDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(90)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Carlito", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(120)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bowlingDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle50.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(90)))));
+            dataGridViewCellStyle50.Font = new System.Drawing.Font("Carlito", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle50.ForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle50.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(120)))));
+            dataGridViewCellStyle50.SelectionForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle50.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bowlingDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle50;
             this.bowlingDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.bowlingDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.номерДорожкиDataGridViewTextBoxColumn,
@@ -311,20 +349,49 @@ namespace Диплом
             this.датаБрониDataGridViewTextBoxColumn1,
             this.кОплатеDataGridViewTextBoxColumn1});
             this.bowlingDataGridView.DataSource = this.броньБоулингBindingSource;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(90)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Carlito", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(120)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.bowlingDataGridView.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle51.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle51.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(90)))));
+            dataGridViewCellStyle51.Font = new System.Drawing.Font("Carlito", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle51.ForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle51.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(120)))));
+            dataGridViewCellStyle51.SelectionForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle51.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.bowlingDataGridView.DefaultCellStyle = dataGridViewCellStyle51;
             this.bowlingDataGridView.GridColor = System.Drawing.SystemColors.Control;
             this.bowlingDataGridView.Location = new System.Drawing.Point(25, 19);
             this.bowlingDataGridView.Name = "bowlingDataGridView";
             this.bowlingDataGridView.RowHeadersVisible = false;
             this.bowlingDataGridView.Size = new System.Drawing.Size(758, 263);
             this.bowlingDataGridView.TabIndex = 4;
+            // 
+            // номерДорожкиDataGridViewTextBoxColumn
+            // 
+            this.номерДорожкиDataGridViewTextBoxColumn.DataPropertyName = "НомерДорожки";
+            this.номерДорожкиDataGridViewTextBoxColumn.HeaderText = "Номер дорожки";
+            this.номерДорожкиDataGridViewTextBoxColumn.Name = "номерДорожкиDataGridViewTextBoxColumn";
+            // 
+            // количествоЧасовDataGridViewTextBoxColumn1
+            // 
+            this.количествоЧасовDataGridViewTextBoxColumn1.DataPropertyName = "КоличествоЧасов";
+            this.количествоЧасовDataGridViewTextBoxColumn1.HeaderText = "Количество часов";
+            this.количествоЧасовDataGridViewTextBoxColumn1.Name = "количествоЧасовDataGridViewTextBoxColumn1";
+            // 
+            // датаБрониDataGridViewTextBoxColumn1
+            // 
+            this.датаБрониDataGridViewTextBoxColumn1.DataPropertyName = "ДатаБрони";
+            this.датаБрониDataGridViewTextBoxColumn1.HeaderText = "Дата брони";
+            this.датаБрониDataGridViewTextBoxColumn1.Name = "датаБрониDataGridViewTextBoxColumn1";
+            // 
+            // кОплатеDataGridViewTextBoxColumn1
+            // 
+            this.кОплатеDataGridViewTextBoxColumn1.DataPropertyName = "КОплате";
+            this.кОплатеDataGridViewTextBoxColumn1.HeaderText = "К оплате";
+            this.кОплатеDataGridViewTextBoxColumn1.Name = "кОплатеDataGridViewTextBoxColumn1";
+            // 
+            // броньБоулингBindingSource
+            // 
+            this.броньБоулингBindingSource.DataMember = "БроньБоулинг";
+            this.броньБоулингBindingSource.DataSource = this.центрОРDataSet;
             // 
             // pnlBookingKaraoke
             // 
@@ -381,6 +448,7 @@ namespace Диплом
             this.iBtnChangeBookKar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iBtnChangeBookKar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iBtnChangeBookKar.UseVisualStyleBackColor = false;
+            this.iBtnChangeBookKar.Click += new System.EventHandler(this.iBtnChangeBookKar_Click);
             // 
             // iBtnAddBookKar
             // 
@@ -403,27 +471,28 @@ namespace Диплом
             this.iBtnAddBookKar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iBtnAddBookKar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iBtnAddBookKar.UseVisualStyleBackColor = false;
+            this.iBtnAddBookKar.Click += new System.EventHandler(this.iBtnAddBookKar_Click);
             // 
             // karaokeDataGridView
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(90)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Carlito", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(120)))));
-            this.karaokeDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle52.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(90)))));
+            dataGridViewCellStyle52.Font = new System.Drawing.Font("Carlito", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle52.ForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle52.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(120)))));
+            this.karaokeDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle52;
             this.karaokeDataGridView.AutoGenerateColumns = false;
             this.karaokeDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.karaokeDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(83)))));
             this.karaokeDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.karaokeDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(90)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Carlito", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(120)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.karaokeDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle53.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle53.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(90)))));
+            dataGridViewCellStyle53.Font = new System.Drawing.Font("Carlito", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle53.ForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle53.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(120)))));
+            dataGridViewCellStyle53.SelectionForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle53.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.karaokeDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle53;
             this.karaokeDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.karaokeDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.номерСтолаDataGridViewTextBoxColumn,
@@ -431,118 +500,20 @@ namespace Диплом
             this.датаБрониDataGridViewTextBoxColumn2,
             this.кОплатеDataGridViewTextBoxColumn2});
             this.karaokeDataGridView.DataSource = this.броньКараокеBindingSource;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(90)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Carlito", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(120)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.karaokeDataGridView.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle54.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(90)))));
+            dataGridViewCellStyle54.Font = new System.Drawing.Font("Carlito", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle54.ForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle54.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(120)))));
+            dataGridViewCellStyle54.SelectionForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle54.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.karaokeDataGridView.DefaultCellStyle = dataGridViewCellStyle54;
             this.karaokeDataGridView.GridColor = System.Drawing.SystemColors.Control;
             this.karaokeDataGridView.Location = new System.Drawing.Point(25, 19);
             this.karaokeDataGridView.Name = "karaokeDataGridView";
             this.karaokeDataGridView.RowHeadersVisible = false;
             this.karaokeDataGridView.Size = new System.Drawing.Size(758, 263);
             this.karaokeDataGridView.TabIndex = 4;
-            // 
-            // iBtnBackB
-            // 
-            this.iBtnBackB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.iBtnBackB.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iBtnBackB.FlatAppearance.BorderSize = 0;
-            this.iBtnBackB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iBtnBackB.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.iBtnBackB.IconChar = FontAwesome.Sharp.IconChar.AngleLeft;
-            this.iBtnBackB.IconColor = System.Drawing.Color.Gainsboro;
-            this.iBtnBackB.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iBtnBackB.IconSize = 25;
-            this.iBtnBackB.Location = new System.Drawing.Point(-2, 0);
-            this.iBtnBackB.Name = "iBtnBackB";
-            this.iBtnBackB.Size = new System.Drawing.Size(24, 20);
-            this.iBtnBackB.TabIndex = 17;
-            this.iBtnBackB.UseVisualStyleBackColor = true;
-            this.iBtnBackB.Click += new System.EventHandler(this.iBtnBackB_Click);
-            // 
-            // центрОРDataSet
-            // 
-            this.центрОРDataSet.DataSetName = "ЦентрОРDataSet";
-            this.центрОРDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // броньБильярдBindingSource
-            // 
-            this.броньБильярдBindingSource.DataMember = "БроньБильярд";
-            this.броньБильярдBindingSource.DataSource = this.центрОРDataSet;
-            // 
-            // броньБильярдTableAdapter
-            // 
-            this.броньБильярдTableAdapter.ClearBeforeFill = true;
-            // 
-            // броньБоулингBindingSource
-            // 
-            this.броньБоулингBindingSource.DataMember = "БроньБоулинг";
-            this.броньБоулингBindingSource.DataSource = this.центрОРDataSet;
-            // 
-            // броньБоулингTableAdapter
-            // 
-            this.броньБоулингTableAdapter.ClearBeforeFill = true;
-            // 
-            // броньКараокеBindingSource
-            // 
-            this.броньКараокеBindingSource.DataMember = "БроньКараоке";
-            this.броньКараокеBindingSource.DataSource = this.центрОРDataSet;
-            // 
-            // броньКараокеTableAdapter
-            // 
-            this.броньКараокеTableAdapter.ClearBeforeFill = true;
-            // 
-            // номерСтоликаDataGridViewTextBoxColumn
-            // 
-            this.номерСтоликаDataGridViewTextBoxColumn.DataPropertyName = "НомерСтолика";
-            this.номерСтоликаDataGridViewTextBoxColumn.HeaderText = "Номер столика";
-            this.номерСтоликаDataGridViewTextBoxColumn.Name = "номерСтоликаDataGridViewTextBoxColumn";
-            // 
-            // количествоЧасовDataGridViewTextBoxColumn
-            // 
-            this.количествоЧасовDataGridViewTextBoxColumn.DataPropertyName = "КоличествоЧасов";
-            this.количествоЧасовDataGridViewTextBoxColumn.HeaderText = "Количество часов";
-            this.количествоЧасовDataGridViewTextBoxColumn.Name = "количествоЧасовDataGridViewTextBoxColumn";
-            // 
-            // датаБрониDataGridViewTextBoxColumn
-            // 
-            this.датаБрониDataGridViewTextBoxColumn.DataPropertyName = "ДатаБрони";
-            this.датаБрониDataGridViewTextBoxColumn.HeaderText = "Дата брони";
-            this.датаБрониDataGridViewTextBoxColumn.Name = "датаБрониDataGridViewTextBoxColumn";
-            // 
-            // кОплатеDataGridViewTextBoxColumn
-            // 
-            this.кОплатеDataGridViewTextBoxColumn.DataPropertyName = "КОплате";
-            this.кОплатеDataGridViewTextBoxColumn.HeaderText = "К оплате";
-            this.кОплатеDataGridViewTextBoxColumn.Name = "кОплатеDataGridViewTextBoxColumn";
-            // 
-            // номерДорожкиDataGridViewTextBoxColumn
-            // 
-            this.номерДорожкиDataGridViewTextBoxColumn.DataPropertyName = "НомерДорожки";
-            this.номерДорожкиDataGridViewTextBoxColumn.HeaderText = "Номер дорожки";
-            this.номерДорожкиDataGridViewTextBoxColumn.Name = "номерДорожкиDataGridViewTextBoxColumn";
-            // 
-            // количествоЧасовDataGridViewTextBoxColumn1
-            // 
-            this.количествоЧасовDataGridViewTextBoxColumn1.DataPropertyName = "КоличествоЧасов";
-            this.количествоЧасовDataGridViewTextBoxColumn1.HeaderText = "Количество часов";
-            this.количествоЧасовDataGridViewTextBoxColumn1.Name = "количествоЧасовDataGridViewTextBoxColumn1";
-            // 
-            // датаБрониDataGridViewTextBoxColumn1
-            // 
-            this.датаБрониDataGridViewTextBoxColumn1.DataPropertyName = "ДатаБрони";
-            this.датаБрониDataGridViewTextBoxColumn1.HeaderText = "Дата брони";
-            this.датаБрониDataGridViewTextBoxColumn1.Name = "датаБрониDataGridViewTextBoxColumn1";
-            // 
-            // кОплатеDataGridViewTextBoxColumn1
-            // 
-            this.кОплатеDataGridViewTextBoxColumn1.DataPropertyName = "КОплате";
-            this.кОплатеDataGridViewTextBoxColumn1.HeaderText = "К оплате";
-            this.кОплатеDataGridViewTextBoxColumn1.Name = "кОплатеDataGridViewTextBoxColumn1";
             // 
             // номерСтолаDataGridViewTextBoxColumn
             // 
@@ -568,6 +539,41 @@ namespace Диплом
             this.кОплатеDataGridViewTextBoxColumn2.HeaderText = "К оплате";
             this.кОплатеDataGridViewTextBoxColumn2.Name = "кОплатеDataGridViewTextBoxColumn2";
             // 
+            // броньКараокеBindingSource
+            // 
+            this.броньКараокеBindingSource.DataMember = "БроньКараоке";
+            this.броньКараокеBindingSource.DataSource = this.центрОРDataSet;
+            // 
+            // iBtnBackB
+            // 
+            this.iBtnBackB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iBtnBackB.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iBtnBackB.FlatAppearance.BorderSize = 0;
+            this.iBtnBackB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iBtnBackB.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.iBtnBackB.IconChar = FontAwesome.Sharp.IconChar.AngleLeft;
+            this.iBtnBackB.IconColor = System.Drawing.Color.Gainsboro;
+            this.iBtnBackB.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iBtnBackB.IconSize = 25;
+            this.iBtnBackB.Location = new System.Drawing.Point(-2, 0);
+            this.iBtnBackB.Name = "iBtnBackB";
+            this.iBtnBackB.Size = new System.Drawing.Size(24, 20);
+            this.iBtnBackB.TabIndex = 17;
+            this.iBtnBackB.UseVisualStyleBackColor = true;
+            this.iBtnBackB.Click += new System.EventHandler(this.iBtnBackB_Click);
+            // 
+            // броньБильярдTableAdapter
+            // 
+            this.броньБильярдTableAdapter.ClearBeforeFill = true;
+            // 
+            // броньБоулингTableAdapter
+            // 
+            this.броньБоулингTableAdapter.ClearBeforeFill = true;
+            // 
+            // броньКараокеTableAdapter
+            // 
+            this.броньКараокеTableAdapter.ClearBeforeFill = true;
+            // 
             // Booking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -584,13 +590,13 @@ namespace Диплом
             this.Load += new System.EventHandler(this.Booking_Load);
             this.pnlBookingBilliard.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.billiardsDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.броньБильярдBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.центрОРDataSet)).EndInit();
             this.pnlBookingBowling.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bowlingDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.броньБоулингBindingSource)).EndInit();
             this.pnlBookingKaraoke.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.karaokeDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.центрОРDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.броньБильярдBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.броньБоулингBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.броньКараокеBindingSource)).EndInit();
             this.ResumeLayout(false);
 

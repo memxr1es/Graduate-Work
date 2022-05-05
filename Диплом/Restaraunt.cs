@@ -75,7 +75,12 @@ namespace Диплом
             Variables.choiceAction = 1;
             Variables.pnlNumber = 1;
 
-            new FormAddRestaraunt().Show();
+            DialogResult dialog = new FormAddRestaraunt().ShowDialog();
+
+            if (dialog == DialogResult.Cancel)
+            {
+                this.менюРесторанаTableAdapter.Fill(this.центрОРDataSet.МенюРесторана);
+            }
         }
         private void iBtnChange_Click(object sender, EventArgs e)
         {

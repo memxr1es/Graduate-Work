@@ -130,5 +130,83 @@ namespace Диплом
                 timer1.Enabled = false;
             }
         }
+
+        private void iBtnAdd_Click(object sender, EventArgs e)
+        {
+            Variables.choiceAction = 1;
+            Variables.pnlNumber = 1;
+
+            DialogResult dialog = new FormAddGames().ShowDialog();
+
+            if (dialog == DialogResult.Cancel)
+            {
+                this.бильярдTableAdapter.Fill(this.центрОРDataSet.Бильярд);
+            }
+        }
+
+        private void iBtnChange_Click(object sender, EventArgs e)
+        {
+            Variables.choiceAction = 2;
+            Variables.pnlNumber = 1;
+
+            DialogResult dialog = new FormAddGames().ShowDialog();
+
+            if (dialog == DialogResult.Cancel)
+            {
+                this.бильярдTableAdapter.Fill(this.центрОРDataSet.Бильярд);
+            }
+        }
+
+        private void iBtnAddBo_Click(object sender, EventArgs e)
+        {
+            Variables.choiceAction = 1;
+            Variables.pnlNumber = 2;
+
+            DialogResult dialog = new FormAddGames().ShowDialog();
+
+            if (dialog == DialogResult.Cancel)
+            {
+                this.боулингTableAdapter.Fill(this.центрОРDataSet.Боулинг);
+            }
+        }
+
+        private void iBtnChangeBo_Click(object sender, EventArgs e)
+        {
+            Variables.choiceAction = 2;
+            Variables.pnlNumber = 2;
+
+            DialogResult dialog = new FormAddGames().ShowDialog();
+
+            if (dialog == DialogResult.Cancel)
+            {
+                this.боулингTableAdapter.Fill(this.центрОРDataSet.Боулинг);
+            }
+        }
+
+        private void iBtnAddKa_Click(object sender, EventArgs e)
+        {
+            Variables.choiceAction = 1;
+            Variables.pnlNumber = 3;
+
+            DialogResult dialog = new FormAddGames().ShowDialog();
+
+            if (dialog == DialogResult.Cancel)
+            {
+                this.караокеTableAdapter.Fill(this.центрОРDataSet.Караоке);
+            }
+        }
+
+        private void iBtnChangeKa_Click(object sender, EventArgs e)
+        {
+            Variables.choiceAction = 2;
+            Variables.pnlNumber = 3;
+
+            DialogResult dialog = new FormAddGames().ShowDialog();
+
+            if (dialog == DialogResult.Cancel)
+            {
+                this.караокеTableAdapter.Fill(this.центрОРDataSet.Караоке);
+            }
+        }
     }
 }

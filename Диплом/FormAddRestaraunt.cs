@@ -140,8 +140,8 @@ namespace Диплом
 
         private void btnAddTable_Click(object sender, EventArgs e)
         {
-            checkForFillingCmb(pnlAddTable);
-            checkForFillingTxb(pnlAddTable);
+            Variables.checkForFillingCmb(pnlAddTable);
+            Variables.checkForFillingTxb(pnlAddTable);
 
             if (Variables.choiceAction == 1)
             {

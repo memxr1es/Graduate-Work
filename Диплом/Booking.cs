@@ -65,5 +65,83 @@ namespace Диплом
             Variables.checkReturn = true;
             this.Close();
         }
+
+        private void iBtnAdd_Click(object sender, EventArgs e)
+        {
+            Variables.choiceAction = 1;
+            Variables.pnlNumber = 1;
+
+            DialogResult dialog = new FormAddBooking().ShowDialog();
+
+            if (dialog == DialogResult.Cancel)
+            {
+                this.броньБильярдTableAdapter.Fill(this.центрОРDataSet.БроньБильярд);
+            }
+        }
+
+        private void iBtnChange_Click(object sender, EventArgs e)
+        {
+            Variables.choiceAction = 2;
+            Variables.pnlNumber = 1;
+
+            DialogResult dialog = new FormAddBooking().ShowDialog();
+
+            if (dialog == DialogResult.Cancel)
+            {
+                this.броньБильярдTableAdapter.Fill(this.центрОРDataSet.БроньБильярд);
+            }
+        }
+
+        private void iBtnAddBookBow_Click(object sender, EventArgs e)
+        {
+            Variables.choiceAction = 1;
+            Variables.pnlNumber = 2;
+
+            DialogResult dialog = new FormAddBooking().ShowDialog();
+
+            if (dialog == DialogResult.Cancel)
+            {
+                this.броньБоулингTableAdapter.Fill(this.центрОРDataSet.БроньБоулинг);
+            }
+        }
+
+        private void iBtnChangeBookBow_Click(object sender, EventArgs e)
+        {
+            Variables.choiceAction = 2;
+            Variables.pnlNumber = 2;
+
+            DialogResult dialog = new FormAddBooking().ShowDialog();
+
+            if (dialog == DialogResult.Cancel)
+            {
+                this.броньБоулингTableAdapter.Fill(this.центрОРDataSet.БроньБоулинг);
+            }
+        }
+
+        private void iBtnAddBookKar_Click(object sender, EventArgs e)
+        {
+            Variables.choiceAction = 1;
+            Variables.pnlNumber = 3;
+
+            DialogResult dialog = new FormAddBooking().ShowDialog();
+
+            if (dialog == DialogResult.Cancel)
+            {
+                this.броньКараокеTableAdapter.Fill(this.центрОРDataSet.БроньКараоке);
+            }
+        }
+
+        private void iBtnChangeBookKar_Click(object sender, EventArgs e)
+        {
+            Variables.choiceAction = 2;
+            Variables.pnlNumber = 3;
+
+            DialogResult dialog = new FormAddBooking().ShowDialog();
+
+            if (dialog == DialogResult.Cancel)
+            {
+                this.броньКараокеTableAdapter.Fill(this.центрОРDataSet.БроньКараоке);
+            }
+        }
     }
 }
